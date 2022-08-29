@@ -1,0 +1,39 @@
+import java.util.HashMap;
+
+public class ImplPerro implements IntPerro{
+	
+	HashMap<String, Perro> hash =new HashMap<String, Perro>();
+
+	@Override
+	public void guardar(Perro perro) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editar(Perro perro) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminar(Perro perro) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Perro buscar(Perro perro) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void mostrar() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

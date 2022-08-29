@@ -1,0 +1,11 @@
+
+public class PrincipalHer {
+
+	public static void main(String[] args) {
+		ImplAlumno impAl = new ImplAlumno();
+		ImplDEsayuno implDe = new ImplDEsayuno();
+		
+		Alumno alumno = null;
+		Desayuno desayuno = null;
+	}
+}

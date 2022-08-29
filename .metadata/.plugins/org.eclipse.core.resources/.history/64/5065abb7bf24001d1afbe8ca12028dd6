@@ -1,0 +1,56 @@
+import java.util.HashMap;
+
+public class ImplTela implements IntTela{
+
+	HashMap<String, Tela> hash = new HashMap<String, Tela>();
+	
+	@Override
+	public void guardar(Tela tela) {
+		// TODO Auto-generated method stub
+		hash.put(tela.getTipo(), tela);
+	}
+
+	@Override
+	public void editar(Tela tela) {
+		// TODO Auto-generated method stub
+		hash.put(tela.getTipo(), tela);
+	}
+
+	@Override
+	public void eliminar(Tela tela) {
+		// TODO Auto-generated method stub
+		hash.remove(tela.getTipo());
+	}
+
+	@Override
+	public Tela buscar(Tela tela) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void mostrar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminarTodo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void vacio() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void contar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

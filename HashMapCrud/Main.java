@@ -1,0 +1,46 @@
+
+public class Main {
+	
+	public static void main(String[] args) {
+		ImplPerro imp = new ImplPerro();
+		
+		Perro perro = null;
+		
+		perro = new Perro("Cerbero", "Labrador", 12);
+		imp.guardar(perro);
+		
+		perro = new Perro("Asfd", "Pastor", 32);
+		imp.guardar(perro);
+		
+		perro = new Perro("Jold", "Rusia", 122);
+		imp.guardar(perro);
+		
+		perro = new Perro("Shnazer", "Labrador", 34);
+		imp.guardar(perro);
+		
+		//Mostrar
+		imp.mostrar();
+		
+		
+		//Buscar
+		perro = new Perro("Jold");
+		perro = imp.buscar(perro);
+		
+		System.out.println("Raza encontrada -->" + perro);
+		
+		
+		// Editar
+		perro = new Perro("Jold");
+		perro = imp.buscar(perro);
+		perro.setEdad(123);
+		imp.editar(perro);
+		imp.mostrar();
+		
+		
+		//Eliminar
+		imp.eliminar(new Perro("Jold"));
+		imp.mostrar();
+		
+	}
+
+}

@@ -1,0 +1,45 @@
+package com.develop.mx.general;
+
+import com.develop.mx.entidad.Alumno;
+import com.develop.mx.entidad.Desayuno;
+import com.develop.mx.implementacion.ImpAlumno;
+import com.develop.mx.implementacion.IpmDesayuno;
+
+public class Principal {
+	
+	public static void main(String[] args) {
+		
+		ImpAlumno impAlumno = new ImpAlumno();
+		IpmDesayuno ipDesayuno = new IpmDesayuno();
+		
+		Desayuno desayuno = null;
+		Alumno alumno = null;
+		
+		// Guardar Desayuno
+		
+		desayuno = new Desayuno("Barbacoa", 500, 1);
+		ipDesayuno.guardar(desayuno.getNombre(),desayuno);
+		
+		desayuno = new Desayuno("Hotcakes", 15, 3);
+		ipDesayuno.guardar(desayuno.getNombre(),desayuno);
+		
+		desayuno = new Desayuno("toque", 50, 3);
+		ipDesayuno.guardar(desayuno.getNombre(),desayuno);
+		
+		
+		ipDesayuno.mostar();
+		
+		//desayuno = new Desayuno("toque");
+		desayuno =(Desayuno) ipDesayuno.buscar("toque");
+		
+		// Alumno 
+		
+		alumno = new Alumno("Axel", "Garcia", 23, desayuno);
+		impAlumno.guardar(alumno.getNombre(),alumno);
+		
+		impAlumno.mostar();
+		
+		
+	}
+
+}

@@ -1,0 +1,55 @@
+import java.util.HashMap;
+
+public class ImplCasa implements IntCasa {
+
+	HashMap<String, Casa> hash = new HashMap<String, Casa>();
+	
+	@Override
+	public void guardar(Casa casa) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void editar(Casa casa) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void eliminar(Casa casa) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Casa buscar(Casa casa) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void mostrar() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void eliminarTodo() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void vacio() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void contar() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

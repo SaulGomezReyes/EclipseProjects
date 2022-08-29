@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="IntPerro"/>
+    <fullyQualifiedTypeName name="ImplPerro"/>
+    <fullyQualifiedTypeName name="Perro"/>
+    <fullyQualifiedTypeName name="Taco"/>
+    <fullyQualifiedTypeName name="IntTaco"/>
+    <fullyQualifiedTypeName name="ImplTaco"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="IntTela"/>
+    <fullyQualifiedTypeName name="ImplTela"/>
+    <fullyQualifiedTypeName name="Moto"/>
+    <fullyQualifiedTypeName name="IntMoto"/>
+    <fullyQualifiedTypeName name="ImpleMoto"/>
+    <fullyQualifiedTypeName name="IntCasa"/>
+    <fullyQualifiedTypeName name="ImplCasa"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="com.saul.Interface"/>
+    <fullyQualifiedTypeName name="com.saul.Torta"/>
+    <fullyQualifiedTypeName name="com.saul.Implementacion"/>
+    <fullyQualifiedTypeName name="IntDeporte"/>
+    <fullyQualifiedTypeName name="Deporte"/>
+    <fullyQualifiedTypeName name="ImplDeporte"/>
+    <fullyQualifiedTypeName name="Padre"/>
+    <fullyQualifiedTypeName name="Hijo"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="ImplDEsayuno"/>
+    <fullyQualifiedTypeName name="Desayuno"/>
+    <fullyQualifiedTypeName name="ImplAlumno"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,18 @@
+
+public class Deporte {
+
+	private String nombre;
+	private String pais;
+	private int años;
+	private int jugadores;
+	public Deporte(String nombre, String pais, int años, int jugadores) {
+		this.nombre = nombre;
+		this.pais = pais;
+		this.años = años;
+		this.jugadores = jugadores;
+	}
+	public Deporte() {
+	}
+	
+	
+}

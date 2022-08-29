@@ -1,0 +1,25 @@
+
+public class Casa {
+	
+	private String color;
+	private String material;
+	private String piso;
+	private int cuartos;
+	private int banos;
+	private double precio;
+	public Casa(String color, String material, String piso, int cuartos, int banos, double precio) {
+		this.color = color;
+		this.material = material;
+		this.piso = piso;
+		this.cuartos = cuartos;
+		this.banos = banos;
+		this.precio = precio;
+	}
+	public Casa() {
+	}
+	public Casa(String color) {
+		this.color = color;
+	}
+
+	
+}

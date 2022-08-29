@@ -1,0 +1,19 @@
+
+public class Alumno {
+
+	String nombre;
+	String apellido;
+	int edad;
+	Desayuno desayuno;
+
+	public Alumno() {
+	}
+
+	public Alumno(String nombre, String apellido, int edad, Desayuno desayuno) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+		this.desayuno = desayuno;
+	}
+
+}

@@ -1,0 +1,13 @@
+
+public class Tela {
+	
+	private String tipo;
+	private String color;
+	private String textura;
+	private int metros;
+	private double precio;
+	
+	
+	
+
+}

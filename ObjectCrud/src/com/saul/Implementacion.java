@@ -1,0 +1,44 @@
+package com.saul;
+
+import java.util.HashMap;
+
+public class Implementacion implements Interface {
+
+	HashMap<String, Torta> hash = new HashMap<String, Torta>();
+	Torta torta = null;
+
+	@Override
+	public void guardar(Object obj) {
+		// TODO Auto-generated method stub
+		torta = (Torta) obj;
+		hash.put(torta.getNombre(), torta);
+	}
+
+	@Override
+	public void editar(Object obj) {
+		// TODO Auto-generated method stub
+		torta = (Torta) obj;
+		hash.put(torta.getNombre(), torta);
+	}
+
+	@Override
+	public void eliminar(Object obj) {
+		// TODO Auto-generated method stub
+		torta = (Torta) obj;
+		hash.remove(torta.getNombre());
+	}
+
+	@Override
+	public Object buscar(Object obj) {
+		// TODO Auto-generated method stub
+		torta = (Torta) obj;
+		return hash.get(torta.getNombre());
+	}
+
+	@Override
+	public void mostrar() {
+		// TODO Auto-generated method stub
+		System.out.println(hash.values());
+	}
+
+}

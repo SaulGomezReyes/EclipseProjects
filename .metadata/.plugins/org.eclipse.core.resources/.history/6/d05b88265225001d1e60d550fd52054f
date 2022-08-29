@@ -1,0 +1,11 @@
+
+public class Casa {
+	
+	private String color;
+	private String material;
+	private String piso;
+	private int cuartos;
+	private int banos;
+	private double precio;
+
+}

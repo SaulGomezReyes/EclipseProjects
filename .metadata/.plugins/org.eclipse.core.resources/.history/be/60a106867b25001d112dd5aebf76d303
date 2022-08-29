@@ -1,0 +1,11 @@
+
+public class Hijo extends Padre{
+
+	String colorOjos;
+	double estatura;
+	public Hijo() {
+		
+	}
+	
+	
+}

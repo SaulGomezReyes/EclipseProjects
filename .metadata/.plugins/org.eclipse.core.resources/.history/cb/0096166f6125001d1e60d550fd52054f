@@ -1,0 +1,5 @@
+package com.saul;
+
+public interface Interface {
+
+}

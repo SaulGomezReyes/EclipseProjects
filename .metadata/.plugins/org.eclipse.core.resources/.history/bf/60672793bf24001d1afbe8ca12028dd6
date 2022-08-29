@@ -1,0 +1,54 @@
+
+
+public class ImplTela implements IntTela{
+
+	@Override
+	public void guardar(Tela tela) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editar(Tela tela) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminar(Tela tela) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Tela buscar(Tela tela) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void mostrar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminarTodo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void vacio() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void contar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

@@ -1,0 +1,16 @@
+
+public class Hijo extends Padre{
+
+	String colorOjos;
+	double estatura;
+	public Hijo() {
+		
+	}
+	public Hijo(String nombre, String apelliP, int edad, String colorOjos, double estatura) {
+		super(nombre, apelliP, edad);
+		this.colorOjos = colorOjos;
+		this.estatura = estatura;
+	}
+	
+	
+}

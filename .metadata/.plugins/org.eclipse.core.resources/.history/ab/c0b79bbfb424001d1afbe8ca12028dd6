@@ -1,0 +1,37 @@
+import java.util.HashMap;
+
+public class ImplTaco implements IntTaco{
+	
+	HashMap<String, Taco> hash = new HashMap<String, Taco>();
+
+	@Override
+	public void guardar(Taco taco) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editar(Taco taco) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminar(Taco taco) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Taco buscar(Taco taco) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void mostrar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

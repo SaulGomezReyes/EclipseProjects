@@ -1,0 +1,22 @@
+
+public class Main {
+	
+	public static void main(String[] args) {
+		ImplPerro imp = new ImplPerro();
+		
+		Perro perro = null;
+		
+		perro = new Perro("Cerbero", "Labrador", 12);
+		imp.guardar(perro);
+		
+		perro = new Perro("Asfd", "Pastor", 32);
+		imp.guardar(perro);
+		
+		perro = new Perro("Jold", "Rusia", 122);
+		imp.guardar(perro);
+		
+		perro = new Perro("Shnazer", "Labrador", 34);
+		imp.guardar(perro);
+	}
+
+}

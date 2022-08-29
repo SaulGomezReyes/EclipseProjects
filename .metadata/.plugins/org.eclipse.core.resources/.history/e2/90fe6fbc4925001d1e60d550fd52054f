@@ -1,0 +1,52 @@
+
+public class ImpleMoto implements IntMoto{
+
+	@Override
+	public void guardar(Moto moto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editar(Moto moto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminar(Moto moto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Moto buscar(Moto moto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void mostrar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminarTodo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void vacio() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void contar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

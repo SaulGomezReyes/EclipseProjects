@@ -1,0 +1,28 @@
+package com.saul;
+
+public class Torta {
+
+	private String nombre;
+	private double precio;
+	private String tamano;
+	private String ingredientes;
+
+	public Torta(String nombre, double precio, String tamano, String ingredientes) {
+		this.nombre = nombre;
+		this.precio = precio;
+		this.tamano = tamano;
+		this.ingredientes = ingredientes;
+	}
+
+	public Torta() {
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+}
