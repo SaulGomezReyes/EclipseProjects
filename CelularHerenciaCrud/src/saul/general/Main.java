@@ -19,10 +19,10 @@ public class Main {
 		int ram;
 
 		ImpCelular impCelular = new ImpCelular();
-		ImpMarca impMarca= new ImpMarca();
+		ImpMarca impMarca = new ImpMarca();
 		ImpSistemas impSistemas = new ImpSistemas();
 
-		Celular celular =  null;
+		Celular celular = null;
 		Marca marca = null;
 		SistemaOperativo sistema = null;
 
@@ -45,10 +45,9 @@ public class Main {
 
 		sistema = new SistemaOperativo("Andoroid", "x32", "v5.19");
 		impSistemas.guardar(sistema.getNombre(), sistema);
-		
+
 		sistema = new SistemaOperativo("IOS", "x64", "v9.28");
 		impSistemas.guardar(sistema.getNombre(), sistema);
-	
 
 		impSistemas.mostar();
 
@@ -61,10 +60,10 @@ public class Main {
 			// System.out.println("4 ---> Contar");
 			System.out.println("4 ---> Mostrar Todo");
 			// System.out.println("6 ---> Eliminar Todo");
-			// System.out.println("7 ---> Buscar");
+			System.out.println("5 ---> Buscar");
 			// System.out.println("8 ---> Hay elementos o no?");
 
-			System.out.println("5 ---> Salir");
+			System.out.println("6 ---> Salir");
 			lectura = new Scanner(System.in);
 			menu = lectura.nextInt();
 
@@ -79,7 +78,7 @@ public class Main {
 				System.out.println("Ingrese el precio del celular");
 				lectura = new Scanner(System.in);
 				precio = lectura.nextInt();
-				
+
 				System.out.println("Ingrese la ram del celular");
 				lectura = new Scanner(System.in);
 				ram = lectura.nextInt();
@@ -87,14 +86,14 @@ public class Main {
 				System.out.println("Ingrese la marca del celular");
 				lectura = new Scanner(System.in);
 				marca = (Marca) impMarca.buscar(lectura.nextLine());
-				
+
 				System.out.println("Ingrese el sistema del celular");
 				lectura = new Scanner(System.in);
 				sistema = (SistemaOperativo) impSistemas.buscar(lectura.nextLine());
 
 				celular = new Celular(modelo, precio, ram, marca, sistema);
-				impCelular.guardar(celular.getMarca(), celular);
-				System.out.println("Se registró el nuevo celular--> " + celular.getMarca());
+				impCelular.guardar(celular.getModelo(), celular);
+				System.out.println("Se registró el nuevo celular--> " + celular.getModelo());
 
 				break;
 
@@ -102,49 +101,56 @@ public class Main {
 
 				System.out.println("Escribe el nombre del elemento para editar");
 				lectura = new Scanner(System.in);
-				alumno = new Alumno(lectura.nextLine());
+				celular = new Celular(lectura.nextLine());
 
-				alumno = (Alumno) impAlumno.buscar(alumno.getNombre());
+				celular = (Celular) impCelular.buscar(celular.getModelo());
 
 				do {
 					System.out.println("Opcion a Editar");
-					System.out.println("1 --> Apellido");
-					System.out.println("2 --> Edad");
-					System.out.println("3 --> Salir");
+					System.out.println("1 --> Precio");
+					System.out.println("2 --> Ram");
+					System.out.println("3 --> Marca");
+					System.out.println("4 --> Salir");
 
 					lectura = new Scanner(System.in);
 					menuEdit = lectura.nextInt();
 
 					switch (menuEdit) {
 					case 1:
-						System.out.println("Nuevo apellido del alumno");
+						System.out.println("Nuevo precio del Celular");
 						lectura = new Scanner(System.in);
-						app = lectura.nextLine();
-						alumno.setApp(app);
+						precio = lectura.nextInt();
+						celular.setPrecio(precio);
 						break;
 					case 2:
-						System.out.println("Nuevo edad del alumno");
+						System.out.println("Nuevo ram del Celular");
 						lectura = new Scanner(System.in);
-						edad = lectura.nextInt();
-						alumno.setEdad(edad);
+						ram = lectura.nextInt();
+						celular.setRam(ram);
+						break;
+					case 3:
+						System.out.println("Nuevo marca del Celular");
+						lectura = new Scanner(System.in);
+						marca = (Marca) impMarca.buscar(lectura.nextLine());
+						celular.setMarca(marca);
 						break;
 					}
 
-				} while (menuEdit < 3);
+				} while (menuEdit < 4);
 
-				impAlumno.editar(alumno.getNombre(), alumno);
+				impCelular.editar(celular.getModelo(), celular);
 
-				System.out.println("Se edito correctamente el siguiente deporte " + alumno.getNombre());
+				System.out.println("Se edito correctamente el siguiente celular " + celular.getModelo());
 				break;
 
 			case 3:
 				System.out.println("Opción de Eliminar");
 				System.out.println("Escribe el nombre del elemento a eliminar");
 				lectura = new Scanner(System.in);
-				alumno = new Alumno(lectura.nextLine());
-				alumno = (Alumno) impAlumno.buscar(alumno.getNombre());
+				celular = new Celular(lectura.nextLine());
+				celular= (Celular) impCelular.buscar(celular.getModelo());
 
-				impAlumno.eliminar(alumno.getNombre());
+				impCelular.eliminar(celular.getModelo());
 
 				System.err.println("Elemento eliminado Correctamente!!");
 
@@ -152,10 +158,23 @@ public class Main {
 
 			case 4:
 
-				impAlumno.mostar();
+				System.out.println("Escribe el nombre del elemento para buscar");
+				lectura = new Scanner(System.in);
+				celular = new Celular(lectura.nextLine());
+
+				celular = (Celular) impCelular.buscar(celular.getModelo());
+				
+				System.out.println(celular);
 				break;
 
-			}
+			
+			
+		case 5:
+
+			impCelular.mostar();
+			break;
+
+		}
 		} while (menu < 5);
 		System.err.println("~~~~~~Vuelva Pronto!!~~~~~~");
 

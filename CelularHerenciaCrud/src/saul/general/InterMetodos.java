@@ -11,4 +11,10 @@ public interface InterMetodos {
 	public Object buscar(Object key);
 
 	public void mostar();
+	
+	public void contar();
+	
+	public void vaciar();
+	
+	public void comprobar();
 }
