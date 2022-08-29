@@ -2,9 +2,9 @@ package saul.implementacion;
 
 import java.util.HashMap;
 
-import saul.general.InterMetodos;
+import saul.general.InterMethod;
 
-public class ImpGeneral implements InterMetodos {
+public class ImplementacionGeneral implements InterMethod {
 
 	HashMap<Object, Object> has = new HashMap<Object, Object>();
 
