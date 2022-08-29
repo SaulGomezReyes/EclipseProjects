@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import saul.general.InterMetodos;
 
-public class ImpGeneral implements InterMetodos{
+public class ImpGeneral implements InterMetodos {
 
 	HashMap<Object, Object> has = new HashMap<Object, Object>();
 
@@ -12,7 +12,7 @@ public class ImpGeneral implements InterMetodos{
 	public void guardar(Object key, Object obj) {
 		// TODO Auto-generated method stub
 		has.put(key, obj);
-		
+
 	}
 
 	@Override
@@ -42,19 +42,25 @@ public class ImpGeneral implements InterMetodos{
 	@Override
 	public void contar() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("El numero de elementos es " + has.size());
+
 	}
 
 	@Override
 	public void vaciar() {
 		// TODO Auto-generated method stub
-		
+		has.clear();
+		System.err.println("La lista ha sido vaciada");
 	}
 
 	@Override
 	public void comprobar() {
 		// TODO Auto-generated method stub
-		
+		if (has.isEmpty()) {
+			System.out.println("La lista SIIII tiene datos");
+		} else {
+			System.err.println("La lista NOOO tiene datos");
+		}
 	}
-	
+
 }

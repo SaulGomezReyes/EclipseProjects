@@ -57,13 +57,13 @@ public class Main {
 			System.out.println("1 ---> Alta");
 			System.out.println("2 ---> Editar");
 			System.out.println("3 ---> Eliminar");
-			// System.out.println("4 ---> Contar");
-			System.out.println("4 ---> Mostrar Todo");
-			// System.out.println("6 ---> Eliminar Todo");
-			System.out.println("5 ---> Buscar");
-			// System.out.println("8 ---> Hay elementos o no?");
+			System.out.println("4 ---> Contar");
+			System.out.println("5 ---> Mostrar Todo");
+			System.out.println("6 ---> Eliminar Todo");
+			System.out.println("7 ---> Buscar");
+			System.out.println("8 ---> Hay elementos o no?");
 
-			System.out.println("6 ---> Salir");
+			System.out.println("9 ---> Salir");
 			lectura = new Scanner(System.in);
 			menu = lectura.nextInt();
 
@@ -148,7 +148,7 @@ public class Main {
 				System.out.println("Escribe el nombre del elemento a eliminar");
 				lectura = new Scanner(System.in);
 				celular = new Celular(lectura.nextLine());
-				celular= (Celular) impCelular.buscar(celular.getModelo());
+				celular = (Celular) impCelular.buscar(celular.getModelo());
 
 				impCelular.eliminar(celular.getModelo());
 
@@ -156,26 +156,38 @@ public class Main {
 
 				break;
 
+
 			case 4:
+
+				impCelular.contar();
+				break;
+				
+			case 5:
+
+				impCelular.mostar();
+				break;
+
+			case 6:
+
+				impCelular.vaciar();
+				break;
+			case 7:
 
 				System.out.println("Escribe el nombre del elemento para buscar");
 				lectura = new Scanner(System.in);
 				celular = new Celular(lectura.nextLine());
 
 				celular = (Celular) impCelular.buscar(celular.getModelo());
-				
+
 				System.out.println(celular);
 				break;
+			case 8:
 
-			
-			
-		case 5:
+				impCelular.comprobar();
+				break;
 
-			impCelular.mostar();
-			break;
-
-		}
-		} while (menu < 5);
+			}
+		} while (menu < 9);
 		System.err.println("~~~~~~Vuelva Pronto!!~~~~~~");
 
 	}
