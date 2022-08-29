@@ -1,3 +1,4 @@
+package saul.entity;
 
 public class SistemaOperativo {
 
