@@ -38,5 +38,23 @@ public class ImpGeneral implements InterMetodos{
 		// TODO Auto-generated method stub
 		System.out.println(has);
 	}
+
+	@Override
+	public void contar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void vaciar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void comprobar() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
