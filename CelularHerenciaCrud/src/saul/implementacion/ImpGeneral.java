@@ -57,9 +57,9 @@ public class ImpGeneral implements InterMetodos {
 	public void comprobar() {
 		// TODO Auto-generated method stub
 		if (has.isEmpty()) {
-			System.out.println("La lista Noooo tiene datos");
+			System.err.println("La lista Noooo tiene datos");
 		} else {
-			System.err.println("La lista Siiii tiene datos");
+			System.out.println("La lista Siiii tiene datos");
 		}
 	}
 

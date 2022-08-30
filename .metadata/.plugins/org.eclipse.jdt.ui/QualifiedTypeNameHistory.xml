@@ -27,4 +27,19 @@
     <fullyQualifiedTypeName name="ImplDEsayuno"/>
     <fullyQualifiedTypeName name="Desayuno"/>
     <fullyQualifiedTypeName name="ImplAlumno"/>
+    <fullyQualifiedTypeName name="SistemaOperativo"/>
+    <fullyQualifiedTypeName name="saul.general.InterMetodos"/>
+    <fullyQualifiedTypeName name="saul.implementacion.ImpGeneral"/>
+    <fullyQualifiedTypeName name="saul.implementacion.ImpCelular"/>
+    <fullyQualifiedTypeName name="saul.implementacion.ImpMarca"/>
+    <fullyQualifiedTypeName name="saul.implementacion.ImpSistemas"/>
+    <fullyQualifiedTypeName name="saul.entity.Marca"/>
+    <fullyQualifiedTypeName name="saul.entity.SistemaOperativo"/>
+    <fullyQualifiedTypeName name="saul.entity.Celular"/>
+    <fullyQualifiedTypeName name="saul.general.InterMethod"/>
+    <fullyQualifiedTypeName name="saul.implementacion.ImplementacionGeneral"/>
+    <fullyQualifiedTypeName name="saul.implementacion.ImplLaptop"/>
+    <fullyQualifiedTypeName name="saul.implementacion.ImplTarjeta"/>
+    <fullyQualifiedTypeName name="saul.entity.Tarjeta"/>
+    <fullyQualifiedTypeName name="saul.entity.Laptop"/>
 </qualifiedTypeNameHistroy>
