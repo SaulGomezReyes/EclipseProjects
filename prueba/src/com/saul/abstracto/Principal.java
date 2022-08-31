@@ -14,5 +14,11 @@ public class Principal {
         System.out.println("Programador ~~> " + programador);
         programador.trabajar();
         programador.cobrar();
+
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Actor actor = new Actor("Arnold", "qw234", "Ingeniero", "No se", "Terminator", "Cine");
+        System.out.println("Actor ~~> " + actor);
+        actor.trabajar();
+        actor.cobrar();
     }
 }
