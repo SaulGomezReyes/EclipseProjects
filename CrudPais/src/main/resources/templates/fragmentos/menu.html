@@ -1,0 +1,27 @@
+<nav th:fragment="menu-principal" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" th:href="@{/}">
+			<img alt="..." th:src="@{/images/no-image.png}" width="20px" height="20px">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarsExampleDefault"
+				aria-controls="navbarsExampleDefault" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link active" th:href="@{/}">Inicio</a>
+					</li>
+					<li class="nav-item" ><a class="nav-link" th:href="@{/EstadoCtrl/}">Estado</a></li>
+
+				</ul>
+
+				<!-- 
+				<span class="text-light" 
+				th:if="${session.usuario != null}" th:text="'Bienvenido: ' +${session.usuario.nombre}"></span>&nbsp;&nbsp;
+				 -->
+
+
+			</div>
+		</nav>

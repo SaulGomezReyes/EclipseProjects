@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" th:href="@{/images/logo7.png}">
+
+    <title>FrutasApp | Listado</title>
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/css/jumbotron.css" rel="stylesheet">
+    <link href="bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+<header th:insert="fragmentos/menu.html::menu-principal	">
+
+</header>
+
+
+<main role="main">
+    <br><br>
+    <div class="container">
+        <br><br>
+        <div class="card">
+            <h4 class="card-header"><strong>Listado de Estados</strong></h4>
+            <div class="card-body">
+                <a class="btn btn-primary" th:href="@{/EstadoCtrl/nueva}" title="Crear nueva Fruta" role="button"><i class="fas fa-file" aria-hidden="true"></i> Nueva</a>
+                <hr>
+                <div th:if="${msg != null}" th:text="${msg}"
+                     class="alert alert-success" role="alert" style="margin:20px"></div>
+                <table class="table table-hover">
+                    <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nomre</th>
+                        <th scope="col">Capital</th>
+                        <th scope="col">Habitantes</th>
+                        <th scope="col">Pais</th>
+                        <th scope="col">Operaciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="estado:${lisEstado}">
+                        <td th:text="${estado.idEstado}"></td>
+                        <td th:text="${estado.nombre}"></td>
+                        <td th:text="${estado.capital}"></td>
+                        <td  th:text="${estado.habitantes}"></td>
+                        <td  th:text="${estado.pais.nombre}"></td>
+                        <td>
+                            <a th:href="@{/EstadoCtrl/modificar(id=${estado.idEstado})}" class="btn btn-success btn-sm" role="button" title="Editar el registro."><i class="fas fa-pencil-alt" aria-hidden="true"></i></a>
+                            <a th:href="@{/EstadoCtrl/eliminar(id=${estado.idEstado})}" onclick="return confirm('¿Estas seguro?')" class="btn btn-danger btn-sm" role="button" title="Eliminar el registro."><i class="fas fa-trash" aria-hidden="true"></i></a>
+                        </td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div> <!-- /container -->
+
+</main>
+
+<footer class="footer" th:insert="fragmentos/pie.html::pie-principal">
+
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>
